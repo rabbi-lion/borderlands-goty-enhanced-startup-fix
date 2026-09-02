@@ -138,13 +138,7 @@ Steam's file verification can also restore missing or modified game files.
 
 ## Notes
 
-A game update or Steam file verification may restore the original launcher and require the workaround to be applied again.
-
-## References
-
-This guide was written independently using community reports and testing as technical references.
-
-Borderlands and Borderlands GOTY Enhanced are trademarks of their respective owners.
+A game update (unlikely) or Steam file verification may restore the original launcher and require the workaround to be applied again.
 
 ## License
 
