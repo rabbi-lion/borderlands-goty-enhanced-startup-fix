@@ -138,7 +138,7 @@ Steam's file verification can also restore missing or modified game files.
 
 ## Notes
 
-A game update (unlikely) or Steam file verification may restore the original launcher and require the workaround to be applied again.
+A game update or Steam file verification may restore the original launcher and require the workaround to be applied again.
 
 ## License
 
