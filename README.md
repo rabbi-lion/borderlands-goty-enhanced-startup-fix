@@ -1,151 +1,90 @@
 # Borderlands GOTY Enhanced Startup Fix
 
-A simple workaround for startup and launcher problems in Borderlands GOTY Enhanced on Linux and Windows.
+A workaround for startup and launcher problems in Borderlands GOTY
+Enhanced on Linux and Windows.
 
 ## Steam launch options
 
-Open the game's properties in Steam and add the following to **Launch Options**:
+Open the game's properties in Steam and add the following to
+**Launch Options**:
 
-```text
+```
 %command% -NoLauncher -NoStartupMovies
 ```
 
 ## Bypass the launcher
 
-The workaround is the same on Linux and Windows: preserve the original launcher and make Steam launch the actual game executable instead.
+The workaround is the same on Linux and Windows: preserve the
+original launcher, and make Steam launch the actual game executable
+instead.
+
+The steps are identical on both platforms — only the path differs.
 
 ### Linux
 
-Open:
+The default Steam path is:
 
-```text
+```
 ~/.local/share/Steam/steamapps/common/BorderlandsGOTYEnhanced/Binaries/Win64/
 ```
 
-If your Steam library is stored somewhere else, open the game through:
-
-```text
-Steam → Borderlands GOTY Enhanced → Properties → Installed Files → Browse
-```
-
-and navigate to:
-
-```text
-Binaries/Win64/
-```
-
-Rename:
-
-```text
-Launcher.exe
-```
-
-to:
-
-```text
-Launcher.exe.bak
-```
-
-Make a copy of:
-
-```text
-BorderlandsGOTY.exe
-```
-
-and name the copy:
-
-```text
-Launcher.exe
-```
+If your Steam library is stored elsewhere, open the game through
+`Steam → Borderlands GOTY Enhanced → Properties → Installed Files →
+Browse` and navigate to `Binaries/Win64/`.
 
 ### Windows
 
-Open:
+The default Steam path is:
 
-```text
+```
 C:\Program Files (x86)\Steam\steamapps\common\BorderlandsGOTYEnhanced\Binaries\Win64\
 ```
 
-If your Steam library is stored somewhere else, open:
+If your Steam library is stored elsewhere, open the game through
+`Steam → Borderlands GOTY Enhanced → Properties → Installed Files →
+Browse` and navigate to `Binaries\Win64\`.
 
-```text
-Steam → Borderlands GOTY Enhanced → Properties → Installed Files → Browse
-```
+### Steps
 
-and navigate to:
+In the game directory, for your platform:
 
-```text
-Binaries\Win64\
-```
-
-Rename:
-
-```text
-Launcher.exe
-```
-
-to:
-
-```text
-Launcher.exe.bak
-```
-
-Make a copy of:
-
-```text
-BorderlandsGOTY.exe
-```
-
-and name the copy:
-
-```text
-Launcher.exe
-```
+1. Rename `Launcher.exe` to `Launcher.exe.bak`.
+2. Make a copy of `BorderlandsGOTY.exe`.
+3. Name the copy `Launcher.exe`.
 
 ## Result
 
 The directory should contain:
 
-```text
+```
 BorderlandsGOTY.exe
 Launcher.exe
 Launcher.exe.bak
 ```
 
-Steam will now start the game executable instead of the original launcher.
+Steam will now start the game executable instead of the original
+launcher.
 
 ## Restore the original launcher
 
-Delete the replacement:
+Delete the replacement `Launcher.exe`, then rename `Launcher.exe.bak`
+back to `Launcher.exe`.
 
-```text
-Launcher.exe
-```
-
-Then rename:
-
-```text
-Launcher.exe.bak
-```
-
-back to:
-
-```text
-Launcher.exe
-```
-
-Steam's file verification can also restore missing or modified game files.
+Steam's file verification can also restore missing or modified game
+files.
 
 ## Notes
 
-A game update or Steam file verification may restore the original launcher and require the workaround to be applied again.
+A game update or Steam file verification may restore the original
+launcher and require the workaround to be applied again.
 
 ## License
 
 Made by rabbi-lion.
 
-Original text in this repository is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+Original text in this repository is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 International License.
 
-Referenced projects, games and third-party material retain their respective rights and licenses.
-
-See `LICENSE` for the full license text.
+Referenced projects, games, and third-party material retain their
+respective rights and licenses. See `LICENSE` for the full license
+text.
